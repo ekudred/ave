@@ -1,0 +1,139 @@
+/* ---------- LOOKBOOK ---------- */
+
+.__main__ {
+    max-width: 2050px;
+    margin: 3vw auto 3vw auto;
+}
+
+.__main__container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ----- LOOKBOOK-RANGE ----- */
+
+.__main__range {
+    max-width: 1820px;
+    margin: 0 auto;
+}
+
+.__main__range-container {
+    width: 94%;
+    margin: 0 auto;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+
+    padding: 2vw 0 2vw 0;
+}
+
+/* --- filters --- */
+
+.range-filters {
+    display: flex;
+    margin: 0 0 3vw 0;
+}
+
+.range-filter {
+    font-size: 1rem;
+    color: #727272;
+    text-transform: uppercase;
+    padding: 1vw 0;
+    margin-right: 2rem;
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+.range-filter:hover {
+    color: #00c8c8;
+}
+
+.range-filter:last-child {
+    margin-right: 0;
+}
+
+/* ----- LOOKBOOK-SELECTIONS ----- */
+
+.__look-book__selections {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 3vw auto 4vw auto;
+}
+
+.look-book-section {
+    background-color: #f8f8f8;
+    max-width: 32%;
+    height: auto;
+}
+
+.section-container {
+    margin: 2vw 0 4vw 0;
+    height: 17vw;
+    padding-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    color: #575153;
+}
+
+.section-title {
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+.section-paragraph {
+    font-size: .8vw;
+    width: 50%;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+    margin-top: 1vw;
+}
+
+.section-button {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .8vw;
+    margin-top: 1.5vw;
+    padding: .8vw 1.6vw;
+    font-weight: bold;
+    letter-spacing: 4px;
+    
+    cursor: pointer;
+    border: 2px solid #737373;
+    transition: all .2s ease;
+}
+
+.section-button:hover {
+    color: #ffffff;
+    border: 2px solid #00c8c8;
+    background-color: #00c8c8;
+}
+
+.section-button:active {
+    border: 2px solid #00b3b3;
+    background-color: #00b3b3;
+}
+
+.womens-section {
+    background-image: url("../img/section1.png");
+    background-repeat: no-repeat;
+    background-position: 40% bottom;
+    background-size: 85% auto;
+}
+
+.mens-section {
+    background-image: url("../img/section2.png");
+    background-repeat: no-repeat;
+    background-position: 40% bottom;
+    background-size: 85% auto;
+}
+
+.your-section {
+    background-image: url("../img/section3.png");
+    background-repeat: no-repeat;
+    background-position: 40% bottom;
+    background-size: 85% auto;
+}

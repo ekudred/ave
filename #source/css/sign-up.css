@@ -1,0 +1,195 @@
+/* ---------- SIGN-UP ---------- */
+
+.__sign-up__wrapper {
+    width: 100%;
+    margin: 3rem auto 6rem auto;
+}
+
+.__sign-up__ {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.__sign-up__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.__sign-up__left, .__sign-up__right {
+    width: 50%;
+    padding: 0 2rem;
+}
+
+.sign-up-title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #575153;
+    margin-bottom: 2rem;
+}
+
+.sign-up-form, .register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-up-form > input, .register-form > input {
+    padding: .6rem .5rem;
+    font-size: .8rem;
+    border: 1px solid #e7e7e7;
+    box-shadow: inset 0 0 5px rgba(0, 0 , 0, .1);
+    color: #333333;
+    margin-bottom: 2rem;
+}
+
+.sign-up-form input:focus, .register-form input:focus {
+    border-color: #333333;
+    box-shadow: none;
+}
+
+.sign-up-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #8e8c8c;
+    font-size: .8rem;
+}
+
+.ci {
+    display: inline-block;
+    color: #00c8c8;
+    font-weight: bold;
+}
+
+a.ci::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: auto 0 auto .3rem;
+    background-image: url("../img/arrowNextRight.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.sign-in-button, .reg-button {
+    color: #454647;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: .88rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 1rem;
+    cursor: pointer;
+    outline: 2px solid #737373;
+    transition: all .2s ease;
+}
+
+.sign-in-button:hover, .reg-button:hover {
+    color: #ffffff;
+    outline: 2px solid #00c8c8;
+    background-color: #00c8c8;
+}
+
+.sign-in-button:active, .reg-button:active {
+    background-color: #00b3b3;
+    outline-color: #00b3b3;
+}
+
+.sign-in-button {
+    padding: 1rem 1.5rem;
+}
+
+/* ----- SIGN-UP LEFT ----- */
+
+.__sign-up__left {
+    border-right: 1px solid #eeeeee;
+}
+
+.sign-in-email, .sign-in-password {
+    width: 100%;
+}
+
+
+/* ----- SIGN-UP RIGHT ----- */
+
+.privacy {
+    line-height: 1.3rem;
+}
+
+.reg-button, .privacy {
+    width: 43%;
+}
+
+/* ----- CHECKBOX ----- */
+
+.sign-up-checkbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+	cursor: pointer;
+	position: relative;
+}
+
+.checkbox-reg-label {
+    font-size: .8rem;
+    line-height: 1.2rem;
+    color: #8e8c8c;
+    cursor: pointer;
+    padding-left: 3rem;
+    vertical-align: middle;
+}
+
+.checkbox-reg-label::before {
+    content: "";
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+
+    background-color: #ffffff;
+    border: 1px solid #e7e7e7;
+    box-shadow: inset 0 0 5px rgba(0, 0 , 0, .1);
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.checkbox-reg-label::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    transition: all .2s ease;
+
+    background-color :#ffffff;
+    background-image: url("../img/checkmark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1.1rem 1.1rem;
+
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+input[type="checkbox"].reg-checkbox:checked + .checkbox-reg-label::after {
+    opacity: 1;
+}
+
+input[type="checkbox"].reg-checkbox {
+    -webkit-appearance: none;
+    appearance: none;
+    position: absolute;
+}

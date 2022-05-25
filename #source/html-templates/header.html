@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=1c2a29d8-f50b-46a0-b6ea-165167c3d1c2&lang=ru_RU" type="text/javascript"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>AVE</title>
+</head>
+
+<body>
+    <div id="page-preloader" class="loader">
+        <div class="l_main">
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+          <div class="l_square"><span></span><span></span><span></span></div>
+        </div>
+    </div>
+
+    <div class="header">
+        <div class="header-top-wrapper">
+            <div class="header-top">
+                <div class="header-top-container">
+                    <div class="header-top__left">Currency : GBP</div>
+                    <div class="header-top__right">
+                        <a href="signup.html" class="register">Register</a>
+                        <a href="signup.html" class="sign-in">Sign in</a>
+                        <div class="basket">
+                            <img src="img/basket.png" class="icon-basket">
+                            <div class="basket-ind">empty</div>
+                            <svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom-wrapper">
+            <div class="header-bottom">
+                <div class="header-bottom-container">
+                    <a href="./index.html" class="header-bottom__left"><b>AVENUE</b>&nbsp;FASHION</a>
+                    <div class="header-bottom__right">
+                        <ul class="navigation">
+                            <li class="mens">
+                                <a href="index.html" id="mens">
+                                    mens
+                                    <svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                                </a>
+                                <ul class="sub-nav-wrapper">
+                                    <ul class="sub-nav">
+                                        <ul class="sub-nav-column">
+                                            <li class="sub-nav-title">casuals</li>
+                                            <li class="sub-nav-item">Jackets</li>
+                                            <li class="sub-nav-item">Hoodies & Sweatshirts</li>
+                                            <li class="sub-nav-item">Polo Shirts</li>
+                                            <li class="sub-nav-item">Trousers & Chinos</li>
+                                            <li class="sub-nav-item">T-Shirts</li>
+                                        </ul>
+                                        <ul class="sub-nav-column">
+                                            <li class="sub-nav-title">Formal</li>
+                                            <li class="sub-nav-item">Jackets</li>
+                                            <li class="sub-nav-item">Shirts</li>
+                                            <li class="sub-nav-item">Suits</li>
+                                            <li class="sub-nav-item">Trousers</li>
+                                        </ul>
+                                    </ul>
+                                    <ul class="banner">
+                                        <li class="banner-title">Autumn sale!</li>
+                                        <li class="banner-object">up to 50% off</li>
+                                    </ul>
+                                </ul>
+                            </li>
+
+                            <li class="womens">
+                                <a href="#" id="womens">
+                                    womens
+                                    <svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                                </a>
+                            </li>
+
+                            <li class="the-brand"><a href="thebrand.html" id="the-brand">the brand</a></li>
+
+                            <li class="local-stories"><a href="localstories.html" id="local-stories">local stories</a></li>
+
+                            <li class="look-book">
+                                <a href="lookbook.html" id="look-book">
+                                    look book
+                                    <svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                                </a>
+                                <ul class="sub-nav-wrapper">
+                                    <ul class="sub-nav">
+                                        <ul class="sub-nav-column">
+                                            <li class="sub-nav-title">Our Lookbooks</li>
+                                            <li class="sub-nav-item">Latest Posts (mixed)</li>
+                                            <li class="sub-nav-item">Men’s Lookbook</li>
+                                            <li class="sub-nav-item">Women’s Lookbook</li>
+                                        </ul>
+                                        <ul class="sub-nav-column">
+                                            <li class="sub-nav-title">Your Lookbook</li>
+                                            <li class="sub-nav-item">View and Edit</li>
+                                            <li class="sub-nav-item">Share</li>
+                                            <li class="sub-nav-item">Delete</li>
+                                        </ul>
+                                    </ul>
+                                    <ul class="banner">
+                                        <li class="banner-title">Autumn sale!</li>
+                                        <li class="banner-object">up to 50% off</li>
+                                    </ul>
+                                </ul>
+                            </li>
+
+                            <li class="search">
+                                <input type="text" placeholder="Search.." class="input-search">
+                                <img src="img/magnifier.png" class="magnifier">
+                            </li>
+                        </ul>
+
+                        <div class="burger-wrapper">
+                            <svg class="burger">
+                                <line x1="0px" y1="4px" x2="30px" y2="4px" stroke="#454647" stroke-width="3px"/>
+                                <line x1="0px" y1="15px" x2="30px" y2="15px" stroke="#454647" stroke-width="3px"/>
+                                <line x1="0px" y1="26px" x2="30px" y2="26px" stroke="#454647" stroke-width="3px"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="burger-navigation-wrapper">
+                    <ul class="burger-navigation">
+                        <li class="_search">
+                            <input type="text" placeholder="search.." class="_input-search">
+                            <svg viewBox="0 0 32 32">
+                                <path d="M27.414,24.586l-5.077-5.077C23.386,17.928,24,16.035,24,14c0-5.514-4.486-10-10-10S4,8.486,4,14  s4.486,10,10,10c2.035,0,3.928-0.614,5.509-1.663l5.077,5.077c0.78,0.781,2.048,0.781,2.828,0  C28.195,26.633,28.195,25.367,27.414,24.586z M7,14c0-3.86,3.14-7,7-7s7,3.14,7,7s-3.14,7-7,7S7,17.86,7,14z"/>
+                            </svg>
+                        </li>
+                        <li class="_mens">
+                            <div class="nav-item-wrapper bt">
+                                <div id="mens"><a href="index.html">mens</a></div><svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                            </div>
+                            <ul class="burger-sub-nav">
+                                <ul class="burger-sub-nav-column">
+                                    <li class="bsn-nav-title">casuals</li>
+                                    <li class="bsn-nav-item">Jackets</li>
+                                    <li class="bsn-nav-item">Hoodies & Sweatshirts</li>
+                                    <li class="bsn-nav-item">Polo Shirts</li>
+                                    <li class="bsn-nav-item">Trousers & Chinos</li>
+                                    <li class="bsn-nav-item">T-Shirts</li>
+                                </ul>
+                                <ul class="burger-sub-nav-column">
+                                    <li class="bsn-nav-title">Formal</li>
+                                    <li class="bsn-nav-item">Jackets</li>
+                                    <li class="bsn-nav-item">Shirts</li>
+                                    <li class="bsn-nav-item">Suits</li>
+                                    <li class="bsn-nav-item">Trousers</li>
+                                </ul>
+                            </ul>
+                        </li>
+                        <li class="_womens">
+                            <div class="nav-item-wrapper">
+                                <div id="womens"><a href="#">womens</a></div><svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                            </div>
+                        </li>
+                        <li class="_the-brand">
+                            <div class="nav-item-wrapper">
+                                <div id="the-brand"><a href="thebrand.html">the brand</a></div><svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                            </div>
+                        </li>
+                        <li class="_local-stories">
+                            <div class="nav-item-wrapper">
+                                <div id="local-stories"><a href="localstories.html">local stories</a></div><svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                            </div>
+                        </li>
+                        <li class="_look-book">
+                            <div class="nav-item-wrapper bt">
+                                <div id="look-book"><a href="lookbook.html">look book</a></div><svg><polyline points="0,0 4.5,5 9,0"/></svg>
+                            </div>
+
+                            <ul class="burger-sub-nav">
+                                <ul class="burger-sub-nav-column">
+                                    <li class="bsn-nav-title">Our Lookbooks</li>
+                                    <li class="bsn-nav-item">Latest Posts (mixed)</li>
+                                    <li class="bsn-nav-item">Men’s Lookbook</li>
+                                    <li class="bsn-nav-item">Women’s Lookbook</li>
+                                </ul>
+                                <ul class="burger-sub-nav-column">
+                                    <li class="bsn-nav-title">Your Lookbook</li>
+                                    <li class="bsn-nav-item">View and Edit</li>
+                                    <li class="bsn-nav-item">Share</li>
+                                    <li class="bsn-nav-item">Delete</li>
+                                </ul>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>

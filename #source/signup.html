@@ -1,0 +1,54 @@
+@@include('html-templates/header.html')
+
+        <div class="intro-wrapper">
+            <div class="intro">
+                <div class="intro-container">
+                    <div class="intro-title"><b>WELCOME</b>&nbsp; TO AVE</div>
+                    <div class="intro-tagline">sign in or register</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="__sign-up__wrapper">
+        <div class="__sign-up__">
+            <div class="__sign-up__container">
+                <div class="__sign-up__left">
+                    <div class="sign-up-title">sign in</div>
+                    <form action="" method="" class="sign-up-form">
+                        <input type="text" id="sign-in-email" placeholder="Your Email..">
+                        <input type="text" id="sign-in-password" placeholder="Your password..">
+                        
+                        <div class="sign-up-bottom">
+                            <button type="submit" class="sign-in-button">sign in</button>
+                            <a href="#" class="forgot ci">Forgot your Password</a>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="__sign-up__right">
+                    <div class="sign-up-title">register</div>
+                    <form action="" method="" class="register-form">
+                        <input type="text" id="reg-email" placeholder="Your Email..">
+                        <input type="text" id="reg-password" placeholder="Your password..">
+                        <input type="text" placeholder="Confirm password..">
+
+                        <div class="sign-up-checkbox">
+                            <input type="checkbox" class="reg-checkbox" id="reg-checkbox">
+                            <label for="reg-checkbox" class="checkbox-reg-label">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</label>
+                        </div>
+
+                        <div class="sign-up-bottom">
+                            <button type="submit" class="reg-button">create account</button>
+                            <div class="privacy">
+                                By clicking ‘Create Account’, you 
+                                agree to our <a href="#" class="ci">Privacy Policy</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+@@include('html-templates/footer.html')

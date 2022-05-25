@@ -1,0 +1,247 @@
+/* ---------- LOCAL-STORIES ---------- */
+
+.__local-stories__ {
+    width: 100%;
+    margin: 3rem auto;
+}
+
+/* ----- LOCATIONS ----- */
+
+.locations-wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.locations {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    width: 94%;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 30%;
+    max-height: 350px;
+    margin-bottom: 2rem;
+}
+
+.location-content {
+    width: 100%;
+}
+
+.location-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: #575153;
+}
+
+.location-preface {
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding-bottom: .6rem;
+    color: #575153;
+}
+
+.location-paragraph {
+    font-size: .9rem;
+    padding-bottom: 1.5rem;
+    color: #575153;
+}
+
+.location-button {
+    justify-self: flex-end;
+    color: #454647;
+    text-transform: uppercase;
+    text-align: center;
+    width: 70%;
+    font-size: .88rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+    padding: 1rem;
+    cursor: pointer;
+    border: 2px solid #737373;
+    transition: all .2s ease;
+}
+
+.location-button:hover {
+    color: #ffffff;
+    border: 2px solid #00c8c8;
+    background-color: #00c8c8;
+}
+
+.location-button:active {
+    background-color: #00b3b3;
+}
+
+/* ----- MAP ----- */
+
+.map-wrapper {
+    width: 100%;
+    margin: 2rem auto 4rem auto;
+    background-color: #f8f8f8;
+}
+
+.map {
+    max-width: 2050px;
+    margin: 0 auto;
+}
+
+.map-container {
+    display: flex;
+}
+
+#map {
+    width: 60%;
+    height: 499px;
+}
+
+.map-location {
+    width: 40%;
+    height: auto;
+    padding: 2rem;
+}
+
+.map-location-content {
+    color: #575153;
+}
+
+.map-location-title {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.map-location-preface {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+    padding-bottom: .8rem;
+}
+
+.map-location-paragraph {
+    font-size: .9rem;
+    padding-bottom: 1.5rem;
+}
+
+.map-location-items {
+    font-size: .9rem;
+    color: #8e8c8c;
+}
+
+.address, .tel, .site, .email, .working {
+    display: block;
+    margin-left: 2rem;
+}
+
+.address::before, .tel::before,
+.site::before, .email::before, .working::before {
+    position: relative;
+    right: 2rem;
+    top: 1.1rem;
+}
+
+.address::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 20px;
+    background: url("../img/address.png") no-repeat center;
+    background-size: 70% 70%;
+}
+
+.tel::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/tel.png") no-repeat center;
+    background-size: 70% 70%;
+}
+
+.site::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/site.png") no-repeat center;
+    background-size: 70% 70%;
+}
+
+.email::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../img/email.png") no-repeat center;
+    background-size: 70% 70%;
+}
+
+.working::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+    background: url("../img/working.png") no-repeat center;
+    background-size: 70% 70%;
+}
+
+.map-location-icons {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.icon-fb, .icon-tw,
+.icon-inst, .icon-vk {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .2s ease;
+}
+
+.icon-fb:hover, .icon-tw:hover,
+.icon-inst:hover, .icon-vk:hover {
+    transform: scale(1.1);
+}
+
+.icon-fb, .icon-tw, .icon-inst {
+    margin-right: .7rem;
+}
+
+.icon-fb {
+    background: url("../img/FB.png") no-repeat center;
+    background-size: 1rem 1rem;
+    background-color: #727272;
+}
+
+.icon-tw {
+    background: url("../img/TWITTER.png") no-repeat center;
+    background-size: 1rem 1rem;
+    background-color: #727272;
+}
+
+.icon-inst {
+    background: url("../img/instagram.png") no-repeat center;
+    background-size: 1rem 1rem;
+    background-color: #727272;
+}
+
+.icon-vk {
+    background: url("../img/VK.png") no-repeat center;
+    background-size: 1rem 1rem;
+    background-color: #727272;
+}
